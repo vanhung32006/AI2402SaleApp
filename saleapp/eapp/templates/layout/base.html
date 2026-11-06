@@ -13,9 +13,11 @@
 {% include 'layout/header.html' %}
 
 <section class="container">
-    {% block content %}{% endblock %}
+{% block content %}{% endblock %}
 </section>
 
 {% include 'layout/footer.html' %}
+
+<script src="{{url_for('static',filename='js/main.js')}}"></script>
 </body>
 </html>
